@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menuback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/typingpratitle"
+        android:id="@+id/typingtitle"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="50dp"/>
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:id="@+id/spacepra"
+        android:background="@drawable/spacebutton"
+        android:layout_below="@+id/title"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignStart="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:id="@+id/wordpra"
+        android:background="@drawable/wordbutton"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/typingpra"
+        android:layout_alignStart="@+id/typingpra"
+        android:layout_alignEnd="@+id/typingpra"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:id="@+id/shortpra"
+        android:background="@drawable/shortbutton"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/typingpra"
+        android:layout_alignStart="@+id/typingpra"
+        android:layout_alignEnd="@+id/typingpra"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

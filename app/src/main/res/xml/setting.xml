@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="사용자 설정">
+        <EditTextPreference
+            android:key="getName"
+            android:title="너의 이름은 무엇이냐?"
+            android:summary="정확히 한글자 한글자 입력하시오"
+            />
+        <EditTextPreference
+            android:key="getID"
+            android:title="너의 그 별명은 무엇이냐?"
+            android:summary="너의 치욕스러운 별명을 하나 적어보아라"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="기타 설정">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="emp"
+            android:summary="듣고 싶나 안 듣고 싶나"
+            android:title="소리 ON / OFF">
+        </CheckBoxPreference>
+
+
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menuback">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/shorttitle"
+    android:layout_gravity="center"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/shorttittle"
+    android:gravity="center"
+    android:textSize="50dp"/>
+
+
+    <RelativeLayout
+        style="@style/checkBackgroudStyle"
+        android:background="@drawable/point"
+        android:id="@+id/spacespeed"
+        android:layout_below="@+id/shorttile">
+        <TextView
+            style="@style/checkTextStyle"
+            android:text="0 / 20"
+            android:id="@+id/statusTxt"
+            android:layout_marginRight="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/wrongTxt"
+            android:layout_toStartOf="@+id/wrongTxt" />
+        <TextView
+            style="@style/checkTextStyle"
+            android:text="0"
+            android:id="@+id/wrongTxt"
+            android:layout_marginRight="65dp"
+            android:layout_marginEnd="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/correctTxt"
+            android:layout_toStartOf="@+id/correctTxt" />
+        <TextView
+            style="@style/checkTextStyle"
+            android:text="0%"
+            android:id="@+id/correctTxt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="175dp"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+
+        android:layout_below="@+id/shorttitle"
+        android:layout_gravity="center"
+        android:background="@drawable/wordback"
+        >
+
+        <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/shortsentence"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+
+        <EditText
+            style="@style/editShortTextStyle"
+            android:id="@+id/shortinput"
+
+            android:layout_marginTop="50dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
